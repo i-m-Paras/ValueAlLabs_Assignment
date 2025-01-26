@@ -41,7 +41,7 @@ Follow these steps to set up the project locally:
 
 #### **Clone the Repository**
 ```bash
-git clone [https://github.com/your-repo/frequency-analysis-tool.git](https://github.com/i-m-Paras/ValueAlLabs_Assignment.git)
+git clone https://github.com/i-m-Paras/ValueAlLabs_Assignment.git
 ```
 
 #### **Set Up the Backend**
