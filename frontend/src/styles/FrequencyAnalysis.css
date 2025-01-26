@@ -1,0 +1,124 @@
+/* General Styles */
+.analysis-result {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    color: #5e60ce;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Word List Styles */
+  .word-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .word-item {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  /* Checkbox Styles */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5e60ce;
+    border-radius: 4px;
+    appearance: none;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .checkbox:checked {
+    background-color: #5e60ce;
+    transform: scale(1.2);
+    position: relative;
+  }
+  
+  .checkbox:checked::after {
+    content: "✔";
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Animated Words */
+  .animated-word {
+    font-size: 1.2rem;
+    color: #444;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .word-item:hover .animated-word {
+    color: #5e60ce;
+    transform: scale(1.1);
+  }
+  
+  .word-count {
+    font-weight: bold;
+    color: #7d55ec;
+  }
+  
+  /* Button Styles */
+  .delete-button {
+    background-color: #5e60ce;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #7d55ec;
+    transform: scale(1.05);
+  }
+  
+  .delete-button:active {
+    background-color: #4a4dae;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
