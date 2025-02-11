@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import "../styles/FrequencyAnalysis.css";
 
 const FrequencyAnalysis = ({ wordFrequency, onDelete }) => {
@@ -39,6 +40,15 @@ const FrequencyAnalysis = ({ wordFrequency, onDelete }) => {
       <button onClick={handleDelete} className="delete-button">
         Delete Selected Words
       </button>
+      <h2 className="heading">Word Frequency Chart:</h2>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={wordFrequency.slice(0, 10)}>
+          <XAxis dataKey="word" />
+          <YAxis />
+          <Tooltip />
+          <Bar dataKey="count" fill="#8884d8" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 };

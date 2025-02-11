@@ -1,0 +1,31 @@
+.analysis-result {
+    background-color: transparent;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6f61;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .heading:hover {
+    color: #ff3b3b;
+  }
+  
+  .analysis-item {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a;
+    padding: 10px 0;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .analysis-item:hover {
+    color: #ff6f61;
+  }

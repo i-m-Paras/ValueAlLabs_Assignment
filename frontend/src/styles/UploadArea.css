@@ -78,9 +78,20 @@ body {
   .error-text {
     color: #e90a0a;
     margin-top: 3rem;
-    font-size: 1rem;
-    animation: fadeIn 0.5s ease-in-out;
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold; /* Makes the text stand out */
+    text-shadow: 2px 2px 5px rgba(233, 10, 10, 0.5); /* Adds a glowing effect */
+    animation: fadeIn 0.5s ease-in-out, shake 0.3s ease-in-out 1s;
   }
+  
+  /* Shake animation for extra visibility */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+  }
+  
   
   @keyframes fadeIn {
     from {
